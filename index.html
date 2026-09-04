@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 World Clock</h1>
+            <p>View current time across different time zones</p>
+        </header>
+
+        <div class="controls">
+            <div class="timezone-selector">
+                <input type="text" id="timezoneInput" placeholder="Search timezone..." class="search-input">
+                <select id="timezoneSelect" class="timezone-select">
+                    <option value="">-- Select a timezone --</option>
+                </select>
+                <button id="addBtn" class="btn btn-primary">Add Timezone</button>
+            </div>
+        </div>
+
+        <div class="clocks-grid" id="clocksContainer">
+            <!-- Clocks will be dynamically added here -->
+        </div>
+
+        <div class="preset-timezones">
+            <h3>Quick Add Popular Timezones</h3>
+            <div class="preset-buttons">
+                <button class="preset-btn" data-tz="America/New_York">New York</button>
+                <button class="preset-btn" data-tz="Europe/London">London</button>
+                <button class="preset-btn" data-tz="Europe/Paris">Paris</button>
+                <button class="preset-btn" data-tz="Asia/Tokyo">Tokyo</button>
+                <button class="preset-btn" data-tz="Asia/Shanghai">Shanghai</button>
+                <button class="preset-btn" data-tz="Australia/Sydney">Sydney</button>
+                <button class="preset-btn" data-tz="Asia/Dubai">Dubai</button>
+                <button class="preset-btn" data-tz="America/Los_Angeles">Los Angeles</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
